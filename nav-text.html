@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Nav-bar</title>
+</head>
+<body onresize="myfun()">
+
+    <nav class="nav-container">
+
+        <div class="pc-nav-container">
+
+            <a class=" logo" href="">Adventurous</a>
+
+            <div class="left-nav">
+            <ul class="nav-links">
+
+                <li class="hideOnMobile"><a class="nav-link" href="">Home</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="">About Us</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="">Contact Us</a></li>
+                <li class="hideOnMobile"><a class="nav-link" href="">Explore</a></li>
+                <li class="hideOnMobile"><a class=" btn nav-link" href="">Login</a></li>
+                <li class="hideOnMobile"><a  class=" btn nav-link" href="">SignUp</a></li>
+                <li class="hideMenuBtn" onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="38"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+            </div>
+
+        </div>
+
+
+        <div class="mob-nav">
+
+            <ul class=" sidebar" id="side-menu">
+                <li onclick=hideSideBar() class="sidebar-li"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="">Home</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="">About Us</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="">Contact Us</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="">Explore</a></li>
+
+                <a class="  a-btn " href="">Login</a>
+                <a  class="  a-btn " href="">SignUp</a>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+
+<script>
+    function showSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "flex"
+
+    }
+
+    function hideSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+
+    }
+
+    function myfun(){
+
+    screenWidth = screen.width
+    if(screenWidth > 800){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+    }
+}
+
+</script>
+
+
+</body>
+
+</html>

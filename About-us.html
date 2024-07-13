@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/about-us.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About US</title>
+</head>
+<body onresize=navClose()>
+
+    <!-- --------------- Navigation Bar ------------- -->
+
+
+    <nav class="nav-container">
+
+        <div class="pc-nav-container">
+
+            <a class=" logo" href="">Adventurous</a>
+            <div class="left-nav">
+                <ul class="nav-links">
+
+                    <li class="hideOnMobile"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./product.html">Explore</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./customer.html">Customer</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./About-us.html">About Us</a></li>
+                    <li class="hideOnMobile"><a class=" btn nav-link" href="./login.html">Login</a></li>
+                    <li class="hideOnMobile"><a  class=" btn nav-link" href="./signup.html">SignUp</a></li>
+                    <li class="hideMenuBtn" onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="38" viewBox="0 -960 960 960" width="38"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="mob-nav">
+
+            <ul class=" sidebar" id="side-menu">
+                <li onclick=hideSideBar() class="sidebar-li"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./index.html">Home</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./product.html">Explore</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./customer.html">Customer</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./About-us.html">About Us</a></li>
+
+                <a class="  a-btn " href="./login.html">Login</a>
+                <a  class="  a-btn " href="./signup.html">SignUp</a>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+<!---------------- About US Section ------------------->
+
+<section class="about-us">
+
+    <section class="about-container">
+
+    <div class=" content-container gradient">
+        <div class="about-content" data-aos="zoom-in">
+
+            <h1 class="about-heading">About Us and Our Story</h1>
+
+            <p class="about-detail">
+                The ultimate destination for travel lovers. We are a team of passionate travellers who want to share our
+                experiences and tips with you. Whether you are looking for
+                inspiration, information, or advice, we have it all.
+            </p>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="about-story">
+
+        <div class="col-container" data-aos="zoom-in">
+
+            <div class="col1 col">
+                <h1 class="col-h">How it started</h1>
+
+                <p class="col-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci, fugiat voluptates voluptatem perferendis
+                    ex quas doloribus itaque maiores
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci, fugiat voluptates voluptatem perferendis
+                    ex quas doloribus itaque maiores
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci,
+                </p>
+            </div>
+
+            <div class="col2 col">
+
+                <h1 class="col-h">Why you will <span class="love">Love</span> us</h1>
+
+                <p class="col-p">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci, fugiat voluptates voluptatem perferendis
+                    ex quas doloribus itaque maiores
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci, fugiat voluptates voluptatem perferendis
+                    ex quas doloribus itaque maiores
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tenetur sequi aut adipisci,
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="team-container">
+        <div class="team-content" data-aos="fade-left">
+        <h1 class="t-heading">Meet our Team</h1>
+        <h3 class="p-heading">We are a team of travel enthusiasts who love to share our passion and knowledge with you. We come from different backgrounds and have different skills, but we have one thing in common: we love to travel.</h3>
+        </div>
+
+        <div class="team-col-container" data-aos="zoom-out">
+
+            <div class="t-col col1">
+                <div class="img-cont">
+
+                    <img class="mem-img" src="../assets/customer.jpg" alt="">
+
+                </div>
+                <h1 class="name">John Harry</h1>
+                <h3 class="degni">Founder and CEO of Adventurous</h3>
+
+            </div>
+
+            <div class="t-col col1">
+                <div class="img-cont">
+
+                    <img class="mem-img" src="../assets/customer2.jpg" alt="">
+
+                </div>
+                <h1 class="name">Cathy Berry</h1>
+                <h3 class="degni">Lead Designer and Developer</h3>
+
+            </div>
+
+            <div class="t-col col1">
+                <div class="img-cont">
+
+                    <img class="mem-img" src="../assets/customer3.jpg" alt="">
+
+                </div>
+                <h1 class="name">David Warner</h1>
+                <h3 class="degni">Head of Marketing and Sales</h3>
+
+            </div>
+
+            <div class="t-col col1">
+                <div class="img-cont">
+
+                    <img class="mem-img" src="../assets/customer.jpg" alt="">
+
+                </div>
+                <h1 class="name">John Harry</h1>
+                <h3 class="degni">Founder and CEO of Adventurous</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="love-us-container">
+
+        <div class="travel-cont" data-aos="fade-right">
+            <h1 class="tra-h">Why is <span class="love">Adventurous</span> different?</h1>
+            <p class="tra-p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                laudantium nihil voluptate placeat mollitia quis quisquam eaque recusandae
+                sapiente error tempore doloremque
+                exercitationem, nesciunt maiores. Quod reiciendis asperiores ex sed!
+            </p>
+        </div>
+
+        <div class="travel-img" data-aos="fade-left">
+
+            <img src="../assets/tra.png" width="80%" height="80%" alt="">
+
+        </div>
+
+    </section>
+
+</section>
+
+    <!---------------- Footer Section --------------->
+
+<footer class="footer-container">
+
+    <div class="footer-items" data-aos="zoom-in">
+
+        <div class="footer-links">
+            <a class="footer-link" href="">About Us</a>
+            <a class="footer-link" href="">Contact Us</a>
+            <a class="footer-link" href="">Customer Support</a>
+            <a class="footer-link" href="">Legal</a>
+        </div>
+
+        <p class="copy-con">&copy; 2023 NexusBerry Pakistan, All right reserved.</p>
+    </div>
+
+</footer>
+
+
+
+
+<script>
+    function showSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "flex"
+
+    }
+
+    function hideSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+
+    }
+
+    function navClose(){
+    if(screen.width > 800){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+    }
+}
+
+</script>
+
+<!-------------- AOS script ----------- -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+
+  AOS.init({
+    offset: 90, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 2000,
+  });
+
+
+</script>
+
+</body>
+</html>

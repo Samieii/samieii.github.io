@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.nav-container{
+    background-color: rgb(29, 28, 28);
+}
+
+.costomer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #0b0b0b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.review-container{
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background-color: #161619;
+    box-shadow: 0px 0px 10px 1px rgba(116, 108, 108, 0.828);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.content-container{
+    display: flex;
+    color: rgb(240, 233, 233);
+    font-size: 1.1rem;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 100%;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+.customer{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.outer{
+
+    width: 150px;
+    height: 290px;
+    background-color:#a23ed4;
+    box-shadow: 0px 0px 15px 4px rgb(179, 66, 179);
+    border-radius: 10px;
+    position: relative;
+
+}
+.inner-con{
+    width: 230px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #f045b7;
+    box-shadow: 0px 0px 15px 4px #a23ed4;
+    position: absolute;
+    left:-30%;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    color: rgb(24, 22, 22);
+}
+
+.con-img{
+    width: 100%;
+    height: 70%;
+
+}
+.c-img{
+    border-radius: 20px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.client-name{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cust-content{
+    width: 60%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+/* ----------------- Media Query ---------------- */
+
+@media only screen and (min-width: 1200px){
+
+    .review-container{
+        width: 65%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    .review-container{
+        width: 75%;
+    }
+
+}
+@media only screen and (max-width: 900px){
+
+    .review-container{
+        width: 75%;
+    }
+    .customer{
+        width: 100%;
+    }
+    .cust-content{
+        width: 90%;
+        padding-right: 0;
+
+    }
+
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .review-container{
+        width: 90%;
+
+    }
+    .customer{
+        width: 100%;
+    }
+    .cust-content{
+        width: 90%;
+        padding-right: 0;
+
+    }
+
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}

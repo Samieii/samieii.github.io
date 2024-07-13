@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared.css" />
+
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div class="background">
+      <!------------------ Navigation bar --------------->
+
+      <nav class="nav-container">
+
+        <div class="pc-nav-container">
+
+            <a class=" logo" href="">Adventurous</a>
+            <div class="left-nav">
+                <ul class="nav-links">
+
+                    <li class="hideOnMobile"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./product.html">Explore</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./customer.html">Customer</a></li>
+                    <li class="hideOnMobile"><a class="nav-link" href="./About-us.html">About Us</a></li>
+                    <li class="hideOnMobile"><a class=" btn nav-link" href="./login.html">Login</a></li>
+                    <li class="hideOnMobile"><a  class=" btn nav-link" href="./signup.html">SignUp</a></li>
+                    <li class="hideMenuBtn" onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="38" viewBox="0 -960 960 960" width="38"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="mob-nav">
+
+            <ul class=" sidebar" id="side-menu">
+                <li onclick=hideSideBar() class="sidebar-li"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./index.html">Home</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./product.html">Explore</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./customer.html">Customer</a></li>
+                <li class="sidebar-li" ><a class="a-nav-link" href="./About-us.html">About Us</a></li>
+
+                <a class="  a-btn " href="./login.html">Login</a>
+                <a  class="  a-btn " href="./signup.html">SignUp</a>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+      <!---------------- Signup Form ------------------>
+
+      <h1 class="form-content">
+        Let's signup and get ready for your next adventure!
+      </h1>
+
+      <form class="form-container">
+        <h2 class="form-heading">Sign up</h2>
+        <div class="form-item">
+          <select class="form-seclect" name="" id="">
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <input
+            class="form-input"
+            placeholder="Enter your first name"
+            type="text"
+            name="fname"
+            required
+          />
+        </div>
+
+        <div class="form-item">
+          <input
+            class="form-input"
+            placeholder="Enter your last name"
+            type="text"
+            name="lname"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <input
+            class="form-input"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-item">
+          <input
+            class="form-input"
+            placeholder="Enter your password"
+            type="password"
+            name="pass"
+            required
+          />
+        </div>
+
+        <div class="form-item">
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Again type your password"
+            name="rpass"
+            required
+          />
+        </div>
+
+        <div class="terms-con">
+          <input type="checkbox" required />
+          <p>
+            Agreed with <a href="" class="term-link">Terms and Conditions</a>
+          </p>
+        </div>
+
+        <input type="submit" class="sign-btn" value="Sign up" />
+
+        <p class="al-log">
+          Already have an account? <a class="al-log-link" href="">Log In</a>
+        </p>
+      </form>
+    </div>
+
+    <!---------------- Footer Section --------------->
+
+    <footer class="footer-container">
+      <div class="footer-items">
+        <div class="footer-links">
+          <a class="footer-link" href="">About Us</a>
+          <a class="footer-link" href="">Contact Us</a>
+          <a class="footer-link" href="">Customer Support</a>
+          <a class="footer-link" href="">Legal</a>
+        </div>
+
+        <p class="copy-con">
+          &copy; 2023 NexusBerry Pakistan, All right reserved.
+        </p>
+      </div>
+    </footer>
+
+
+
+
+<script>
+    function showSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "flex"
+
+    }
+
+    function hideSideBar(){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+
+    }
+
+    function navClose(){
+    if(screen.width > 800){
+        const sidebar = document.getElementById("side-menu")
+        sidebar.style.display= "none"
+
+    }
+}
+
+
+</script>
+
+</body>
+</html>
